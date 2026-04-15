@@ -3,11 +3,11 @@
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.6.0-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![CUDA](https://img.shields.io/badge/CUDA-11.8-76B900?logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
-[![Docker](https://img.shields.io/badge/Docker-Ready-9276ED?logo=docker&logoColor=white)``](https://www.docker.com/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-9276ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Track](https://img.shields.io/badge/AICOMP-FGIC-yellow)](#)
 
 This repository reproduces a **National First Prize** solution from the
-**AICOMP 2025 Algorithm Challenge** (Network-Supervised Fine-Grained Image Recognition).
+**AICOMP 2025 Algorithm Challenge** (Network-Supervised Fine-Grained Image Classification).
 
 Official challenge page: https://www.aicomp.cn/
 
@@ -84,13 +84,6 @@ Container runtime paths:
 - Multi-GPU is recommended for training
 
 Core dependencies (`source/requirements.txt`):
-
-- `torch==2.6.0`
-- `torchvision==0.21.0`
-- `timm==1.0.20`
-- `transformers==4.47.1`
-- `cleanlab==2.7.1`
-- `ttach==0.0.3`
 
 ---
 
