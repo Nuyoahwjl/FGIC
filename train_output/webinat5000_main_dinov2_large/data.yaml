@@ -1,0 +1,7 @@
+#train: /mnt/7T/xz/wjl/webfg400_train/train
+#nc: 400
+#test : /mnt/7T/xz/wjl/webfg400_test_A/test_A
+
+train: /mnt/7T/xz/wjl/webinat5000_train/train
+nc: 5000
+test : /mnt/7T/xz/wjl/webinat5000_test_A/test_A
