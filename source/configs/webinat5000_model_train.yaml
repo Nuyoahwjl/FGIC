@@ -1,0 +1,35 @@
+model_name: dinov2_large
+pretrained: True
+weight: null
+
+data: /workspace/src/data/data5000.yaml
+img_size: 224
+val_split: 0.1
+
+batch_size: 32
+epoch: 25
+lr: 0.00003
+gce_q: 0.6
+resize_scale: 0.2
+
+workers: 5
+seed: 3407
+
+use_cleanlab: True
+cleanlab: /workspace/src/cleanlab/webinat5000_cleanlab_indices.npy
+
+mixup: False
+
+distill: True
+teacher_name: convnextv2_large
+teacher_weight: /workspace/train_output/webinat5000_teacher_convnextv2_large/best_model.pt
+distill_alpha: 0.5
+distill_temperature: 4.0
+
+project: train_output
+name: webinat5000_main_dinov2_large
+logger: null
+
+local_rank: -1
+master_addr: localhost
+master_port: '12355'

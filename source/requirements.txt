@@ -1,0 +1,14 @@
+numpy==1.26.4
+pandas==2.2.3
+pillow==11.1.0
+scikit-learn==1.6.0
+torch==2.6.0
+torchvision==0.21.0
+matplotlib==3.10.6
+tqdm==4.65.2
+transformers==4.47.1
+cleanlab==2.7.1
+timm==1.0.20
+ttach==0.0.3
+imagehash==4.3.1
+tensorboard==2.20.0

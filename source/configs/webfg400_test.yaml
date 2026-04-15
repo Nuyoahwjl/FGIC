@@ -1,0 +1,5 @@
+weights: /workspace/train_output/webfg400_main_dinov2_large/best_model.pt
+model_name: dinov2_large
+batchsize: 256
+data: /workspace/src/data/data400.yaml
+output_dir: /workspace/test_output/webfg400_results

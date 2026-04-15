@@ -1,0 +1,3 @@
+train: /data/webinat5000/train
+nc: 5000
+test : /data/webinat5000/test

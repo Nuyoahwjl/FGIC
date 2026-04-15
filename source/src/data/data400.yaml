@@ -1,0 +1,3 @@
+train: /data/webfg400/train
+nc: 400
+test : /data/webfg400/test
