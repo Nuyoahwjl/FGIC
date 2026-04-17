@@ -9,7 +9,7 @@
 This repository reproduces a **National First Prize** solution from the
 **AICOMP 2025 Algorithm Challenge** (Network-Supervised Fine-Grained Image Classification).
 
-Official challenge page: https://www.aicomp.cn/
+Official challenge page: [click here](https://www.aicomp.cn/wp-content/uploads/2025/07/Competition-4-Weakly-Supervised-Fine-Grained-Image-Recognition.pdf)
 
 ---
 
