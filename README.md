@@ -1,4 +1,6 @@
-# 🏆 FGIC Reproduction for AICOMP 2025
+<div align="center">
+
+# 🏆 FGIC Reproduction for AICOMP 2025 🏆
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.6.0-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -8,10 +10,12 @@
 
 This repository reproduces a **National First Prize** solution from the
 **AICOMP 2025 Algorithm Challenge** (Network-Supervised Fine-Grained Image Classification).
-
 Official challenge page: [click here](https://www.aicomp.cn/wp-content/uploads/2025/07/Competition-4-Weakly-Supervised-Fine-Grained-Image-Recognition.pdf)
 
----
+</div>
+
+## 📚 Framework
+![](framework.png)
 
 ## ✨ Highlights
 
@@ -23,7 +27,6 @@ Official challenge page: [click here](https://www.aicomp.cn/wp-content/uploads/2
 - 🔍 **Inference with TTA** (flip + multiply)
 - 📦 **Fully Dockerized workflow** for reproducibility
 
----
 
 ## 🧭 Method Overview
 
@@ -43,8 +46,6 @@ Distillation objective:
 ```text
 loss = alpha * KL(student, teacher, T) * T^2 + (1 - alpha) * GCE(supervised)
 ```
-
----
 
 ## 📁 Project Structure
 
@@ -73,8 +74,6 @@ Container runtime paths:
 - Workspace: `/workspace`
 - Dataset root: `/data`
 
----
-
 ## 🛠️ Environment Requirements
 
 - Linux + NVIDIA GPU(s)
@@ -84,8 +83,6 @@ Container runtime paths:
 - Multi-GPU is recommended for training
 
 Core dependencies (`source/requirements.txt`):
-
----
 
 ## 🗂️ Dataset Preparation
 
@@ -108,19 +105,14 @@ Class-folder format requirements:
 
 Reference download links are listed in `data.txt`.
 
----
 
 ## 🚀 Quick Start
 
 ### 1) Build Docker image
 
 ```bash
-docker build -t FGIC:latest .
-```
-
+docker build -t FGIC:latest
 or:
-
-```bash
 bash build_docker.sh
 ```
 
@@ -147,8 +139,6 @@ Available `<mode>` values:
 - `train5000_teacher`
 - `train5000_main`
 - `test5000`
-
----
 
 ## 📄 Outputs
 
@@ -181,7 +171,6 @@ CSV format:
 image_name,predicted_class
 ```
 
----
 
 ## 🧩 Configuration Notes
 
@@ -202,8 +191,6 @@ Important fields you may tune:
 
 If GPU memory is insufficient, reduce `batch_size` first.
 
----
-
 ## 🌐 Pretrained Weights
 
 Pretrained backbones are downloaded automatically and cached locally during execution.
@@ -214,13 +201,3 @@ Pretrained backbones are downloaded automatically and cached locally during exec
   `facebook/dinov2-large-imagenet1k-1-layer`
 
 The project sets `HF_ENDPOINT=https://hf-mirror.com` for faster download access.
-
----
-
-
-## 🙏 Acknowledgements
-
-- AICOMP 2025 organizers
-- PyTorch, timm, Hugging Face Transformers, CleanLab communities
-
-If this project helps your research or competition reproduction, please consider giving it a ⭐
